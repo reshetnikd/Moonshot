@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352D556523EC7EA600AA4B6B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 352D556323EC7EA600AA4B6B /* astronauts.json */; };
+		352D556623EC7EA600AA4B6B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 352D556423EC7EA600AA4B6B /* missions.json */; };
+		352D556823EC7FE600AA4B6B /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D556723EC7FE600AA4B6B /* Astronaut.swift */; };
+		352D556A23EC80AB00AA4B6B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D556923EC80AB00AA4B6B /* Bundle-Decodable.swift */; };
 		35D30A2223EB55940054A729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D30A2123EB55940054A729 /* AppDelegate.swift */; };
 		35D30A2423EB55940054A729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D30A2323EB55940054A729 /* SceneDelegate.swift */; };
 		35D30A2623EB55940054A729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D30A2523EB55940054A729 /* ContentView.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352D556323EC7EA600AA4B6B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		352D556423EC7EA600AA4B6B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		352D556723EC7FE600AA4B6B /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		352D556923EC80AB00AA4B6B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		35D30A1E23EB55940054A729 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D30A2123EB55940054A729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D30A2323EB55940054A729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +67,11 @@
 				35D30A2123EB55940054A729 /* AppDelegate.swift */,
 				35D30A2323EB55940054A729 /* SceneDelegate.swift */,
 				35D30A2523EB55940054A729 /* ContentView.swift */,
+				352D556723EC7FE600AA4B6B /* Astronaut.swift */,
+				352D556923EC80AB00AA4B6B /* Bundle-Decodable.swift */,
 				35D30A2723EB55980054A729 /* Assets.xcassets */,
+				352D556323EC7EA600AA4B6B /* astronauts.json */,
+				352D556423EC7EA600AA4B6B /* missions.json */,
 				35D30A2C23EB55980054A729 /* LaunchScreen.storyboard */,
 				35D30A2F23EB55980054A729 /* Info.plist */,
 				35D30A2923EB55980054A729 /* Preview Content */,
@@ -134,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D30A2E23EB55980054A729 /* LaunchScreen.storyboard in Resources */,
+				352D556623EC7EA600AA4B6B /* missions.json in Resources */,
 				35D30A2B23EB55980054A729 /* Preview Assets.xcassets in Resources */,
 				35D30A2823EB55980054A729 /* Assets.xcassets in Resources */,
+				352D556523EC7EA600AA4B6B /* astronauts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +162,9 @@
 			files = (
 				35D30A2223EB55940054A729 /* AppDelegate.swift in Sources */,
 				35D30A2423EB55940054A729 /* SceneDelegate.swift in Sources */,
+				352D556A23EC80AB00AA4B6B /* Bundle-Decodable.swift in Sources */,
 				35D30A2623EB55940054A729 /* ContentView.swift in Sources */,
+				352D556823EC7FE600AA4B6B /* Astronaut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
