@@ -41,13 +41,13 @@ struct MissionView: View {
                                     .resizable()
                                     .frame(width: 83, height: 60)
                                     .clipShape(Capsule())
-                                    .overlay(Capsule().stroke(Color.primary, lineWidth: 1))
+                                    .overlay(Capsule().stroke(self.strokeColor(crewMember), lineWidth: 1))
                                 
                                 VStack(alignment: .leading) {
                                     Text(crewMember.astronaut.name)
                                         .font(.headline)
                                     Text(crewMember.role)
-                                        .foregroundColor(.secondary)
+                                        .foregroundColor(crewMember.role == "Commander" ? .red : .secondary)
                                 }
                                 
                                 Spacer()
@@ -62,6 +62,10 @@ struct MissionView: View {
             }
         }
         .navigationBarTitle(Text(mission.displayName), displayMode: .inline)
+    }
+    
+    func strokeColor(_ astronaut: CrewMember) -> Color {
+        return astronaut.role == "Commander" ? Color.blue : Color.primary
     }
     
     init(mission: Mission, astronauts: [Astronaut]) {
