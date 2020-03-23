@@ -18,10 +18,11 @@ struct ContentView: View {
         NavigationView {
             List(missions) { mission in
                 NavigationLink(destination: MissionView(mission: mission, astronauts: self.astronauts)) {
-                    Image(mission.image)
+                    Image(decorative: mission.image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 44, height: 44)
+                        .accessibility(hidden: true)
                     
                     if self.showMode {
                         VStack(alignment: .leading) {
