@@ -28,9 +28,10 @@ struct MissionView: View {
                             .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
                             .padding(.top)
                             .accessibility(hidden: true)
-                            .scaleEffect(geometry.frame(in: .global).midY / 220)
+                            .scaleEffect(geometry.frame(in: .global).minY > 40 ? 1.0 : 0.8)
                     }
                     .frame(maxWidth: fullView.size.width * 0.7)
+                    .animation(.default)
                     
                     Text(self.mission.formattedLaunchDate)
                         .font(.subheadline)
